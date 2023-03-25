@@ -1,0 +1,17 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background-repeat: no-repeat;
+    font-family: "Montserrat", sans-serif;
+    font-style: normal;
+}
+  
+
+.container {
+    max-width: 1440px;
+}
+
+/* .top__header {
+    color: red;
+} */
