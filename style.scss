@@ -1,0 +1,99 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background-repeat: no-repeat;
+    font-family: "Montserrat", sans-serif;
+    font-style: normal;
+}
+
+a {
+    text-decoration: none;
+}
+  
+body {
+    margin: auto;
+    max-width: 1440px;
+    background-color:  #000915;;
+}
+
+.container {
+    max-width: 1220px;
+    margin: auto;
+}
+
+.top {
+    background-image: url(./img/bg.jpg);
+    background-repeat: no-repeat;
+    height: 1024px;
+    margin: auto;
+    &__header {
+        font-weight: 700;
+        font-size: 64px;
+        line-height: 78px;
+        color: #fff;
+        max-width: 760px;
+        padding: 217px 0 32px 0;
+    }
+    &__text {
+        font-weight: 300;
+        font-size: 18px;
+        line-height: 32px;
+        color: #fff;
+        max-width: 480px;
+        margin-bottom: 44px;
+        
+        &_bold {
+            font-weight: 600;
+        }
+    }
+    &__button {
+        background: #9C0332;
+        border-radius: 30px;
+        width: 234px;
+        height: 48px;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 22px;
+        color: #fff;
+        border: none;
+        transition: all 0.5s;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        &:hover {
+            background: #EB443F
+        }
+    }
+}
+
+.bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 556px;
+    &__item {
+        height: 300px;
+        width: 378px;
+        font-weight: 600;
+        font-size: 24px;
+        line-height: 32px;
+        color: #fff;
+        border-radius: 20px;
+        padding-top: 236px;
+        padding-left: 32px;
+        &:hover{
+            border: 3px solid #44D2FF;
+            
+        }
+        &_1{
+            background-image: url(./img/img1.jpg);
+        }
+        &_2 {
+            background-image: url(./img/img2.jpg);
+        }
+        &_3 {
+            background-image: url(./img/img3.jpg);
+        }
+    }
+}
