@@ -71,6 +71,7 @@ body {
   justify-content: space-between;
   align-items: center;
   height: 556px;
+  gap: 15px;
 }
 .bottom__item {
   height: 300px;
@@ -83,9 +84,11 @@ body {
   padding-top: 236px;
   padding-left: 32px;
   border: 3px solid transparent;
+  transition: 0.5s;
 }
 .bottom__item:hover {
   border: 3px solid #44D2FF;
+  transform: scale(1.07);
 }
 .bottom__item_1 {
   background-image: url(./img/img1.jpg);
