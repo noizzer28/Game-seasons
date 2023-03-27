@@ -45,10 +45,9 @@ user.age = 20;
 
 delete user["city of residence"];
 
+let info = prompt("Что хотите узнать о пользователе?");
 
-user.info = prompt("Что хотите узнать о пользователе?");
-
-alert (user.info);
+alert (user[info]);
 
 user.name = prompt ("Ваше имя");
 alert (`Hello, ${user.name}!`);
