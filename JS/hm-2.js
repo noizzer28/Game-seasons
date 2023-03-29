@@ -49,6 +49,6 @@ let info = prompt("Что хотите узнать о пользователе?
 
 alert (user[info]);
 
-user.name = prompt ("Ваше имя");
-alert (`Hello, ${user.name}!`);
+const yourName = prompt ("Ваше имя");
+alert (`Hello, ${yourName}!`);
 
