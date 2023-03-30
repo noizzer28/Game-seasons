@@ -25,6 +25,8 @@ body {
 .top {
   background-image: url(./img/bg.jpg);
   background-repeat: no-repeat;
+  background-position: 30% 0;
+  background-size: cover;
   height: 1024px;
   margin: auto;
 }
@@ -71,7 +73,9 @@ body {
   justify-content: space-between;
   align-items: center;
   height: 556px;
-  gap: 15px;
+  flex-wrap: wrap;
+  gap: 32px;
+  margin: auto;
 }
 .bottom__item {
   height: 300px;
@@ -80,15 +84,14 @@ body {
   font-size: 24px;
   line-height: 32px;
   color: #fff;
-  border-radius: 20px;
+  border-radius: 30px;
   padding-top: 236px;
   padding-left: 32px;
   border: 3px solid transparent;
-  transition: 0.5s;
+  margin: auto;
 }
 .bottom__item:hover {
   border: 3px solid #44D2FF;
-  transform: scale(1.07);
 }
 .bottom__item_1 {
   background-image: url(./img/img1.jpg);
@@ -98,4 +101,23 @@ body {
 }
 .bottom__item_3 {
   background-image: url(./img/img3.jpg);
+}
+
+@media (max-width: 425px) {
+  .top {
+    text-align: center;
+    height: 735px;
+  }
+  .top__header {
+    font-size: 32px;
+    line-height: 39px;
+  }
+  .top__text {
+    font-size: 14px;
+    line-height: 22px;
+    margin: 0 0 32px;
+  }
+  .top__button {
+    margin: auto;
+  }
 }/*# sourceMappingURL=style.css.map */
