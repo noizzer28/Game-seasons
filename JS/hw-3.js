@@ -31,6 +31,8 @@ let a = Number('2');
 let b = Number('3');
 alert(a + b);
 
+// 5
+
 let monthNumber =  prompt("Enter month`s number")
 switch (monthNumber) {
     case ("1"):
@@ -57,3 +59,49 @@ switch (monthNumber) {
         console.log ("You have entered incorrect number")
         break;
 }
+
+// Extra 7 
+
+let item = prompt ("Enter a number");
+
+console.log (item);
+
+item = Number(item);
+
+console.log (item);
+
+if ((item % 2) == 0) {
+    alert("Even");
+} else if ((item % 2) == 1){
+    alert("Odd");
+} else {
+    alert("Incorrect input")
+}
+
+
+
+// 8 - 9
+
+let clientOS = prompt("Enter 0 for iOS, 1 for Android");
+let clientDeviceYear = prompt ("What year did you buy your device?");
+
+if (clientOS == 0 && clientDeviceYear < 2015) {
+
+    console.log("Light version for iOS") 
+
+    } else if (clientOS == 1 && clientDeviceYear < 2015) {
+
+        console.log("Light version for Android") 
+
+        } else if (clientOS == 0) {
+
+            console.log("Download for iOS")
+
+            } else if (clientOS == 1) {
+
+            console.log ("Download for Android")
+
+                } else {
+
+                console.log ("Try again")
+                }

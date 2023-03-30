@@ -29,6 +29,7 @@ body {
     background-size: cover;
     height: 1024px;
     margin: auto;
+    padding: 0 5px 0 5px;
     &__header {
         font-weight: 700;
         font-size: 64px;
@@ -107,7 +108,7 @@ body {
 
 
 // Mobile
-@media (max-width: 425px) {
+@media (max-width: 426px) {
 
 .top {
     text-align: center;
