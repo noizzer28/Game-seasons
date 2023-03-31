@@ -14,7 +14,9 @@ a {
 body {
     margin: auto;
     max-width: 1440px;
-    background-color:  #000915;;
+    background-color:  #000915;
+    height: 100vh;
+    padding: 0 15px;
 }
 
 .container {
@@ -128,5 +130,12 @@ body {
         margin: auto;
     }
 }
+.bottom {
+    margin: 128px auto;
+    height: 100%;
+    &__item_3 {
+        margin-bottom: 128px;
+    }
 
+}
 }
