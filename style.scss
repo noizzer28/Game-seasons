@@ -14,7 +14,9 @@ a {
 body {
     margin: auto;
     max-width: 1440px;
-    background-color:  #000915;;
+    background-color:  #000915;
+    height: 100vh;
+    padding: 0 15px;
 }
 
 .container {
@@ -25,8 +27,11 @@ body {
 .top {
     background-image: url(./img/bg.jpg);
     background-repeat: no-repeat;
+    background-position: 30% 0;
+    background-size: cover;
     height: 1024px;
     margin: auto;
+    padding: 0 5px 0 5px;
     &__header {
         font-weight: 700;
         font-size: 64px;
@@ -72,6 +77,9 @@ body {
     justify-content: space-between;
     align-items: center;
     height: 556px;
+    flex-wrap: wrap;
+    gap: 32px;
+    margin: auto;
     &__item {
         height: 300px;
         width: 378px;
@@ -79,10 +87,11 @@ body {
         font-size: 24px;
         line-height: 32px;
         color: #fff;
-        border-radius: 20px;
+        border-radius: 30px;
         padding-top: 236px;
         padding-left: 32px;
         border: 3px solid transparent;
+        margin: auto;
         &:hover{
             border: 3px solid #44D2FF;
            
@@ -97,4 +106,36 @@ body {
             background-image: url(./img/img3.jpg);
         }
     }
+}
+
+
+// Mobile
+@media (max-width: 426px) {
+
+.top {
+    text-align: center;
+    height: 735px;
+   
+    &__header {
+        font-size: 32px;
+        line-height: 39px;
+        
+    }
+    &__text {
+        font-size: 14px;
+        line-height: 22px;
+        margin: 0 0 32px;
+    }
+    &__button {
+        margin: auto;
+    }
+}
+.bottom {
+    margin: 128px auto;
+    height: 100%;
+    &__item_3 {
+        margin-bottom: 128px;
+    }
+
+}
 }
