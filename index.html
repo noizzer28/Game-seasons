@@ -6,14 +6,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./style.css">
-  <script src="./JS/hw-4.js"></script>
 </head>
 <body>
     <section class="top">
         <div class="container"> 
           <h1 class="top__header">Добро пожаловать на мой сайт !</h1>
-          <h2 class="top__text">Вам предстоит пройти несколько увлекательных игр. Если готов нажимай <span class="top__text_bold">поехали</span> и <span class="top__text_bold">приступай</span></h2>
-          <a href="#" class="top__button">Поехали!</a>
+          <h2 class="top__text text">Вам предстоит пройти несколько увлекательных игр. Если готов нажимай <span class="top__text_bold">поехали</span> и <span class="top__text_bold">приступай</span></h2>
+          <a href="#" class="button">Поехали!</a>
        </div>
     </section>
     <section class="container">
@@ -22,7 +21,14 @@
         <div class="bottom__item bottom__item_2">Игра 2</div>
         <div class="bottom__item bottom__item_3">Игра 3</div>
       </div>
-
+      <div class="seasons flex">
+        <div class="seasons__item">
+          <h2 class="seasons__header header__text">Времена года!</h2>
+          <p class="seasons__text text">Нажмите кнопку играть, введите номер месяца (от 1 до 12) и вы узнаете к какому времени года он относится</p>
+          <a onclick="playSeasons()" href="#" class="button">Играть!</a>
+        </div>
+        <div class="seasons__img"></div>
+      </div>
     </section>
-
+    <script src="./JS/hw-5.js"></script>
 </body>
