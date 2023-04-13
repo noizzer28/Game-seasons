@@ -18,7 +18,7 @@ console.log(b.indexOf(4));
 
 // 3
 const c = [1, 3, 5, 10, 20];
-d = c.join([" "]);
+d = c.join(" ");
 console.log(d);
 
 // 4
@@ -91,28 +91,17 @@ console.log(k);
 
 // 12
 
-// const cities = ["Tokio", "Moscow", "London"]
-// let wordLength = cities.map(function (a, b, c) {
-//     return a.split("");
+const cities = ["Tokio", "Moscow", "London"]
+let wordLength = cities.map(function (a, b, c) {
+    return a.split("");
+})
+console.log(wordLength);
+let result = wordLength.map( function(b, c, d) {
+    return b.length;
+})
+console.log(result);
 
-// })
-// console.log(wordLength);
 
-
-// const result = [];
-// const words = [];
-// function getNumberString () {
-//     for (let i = 0; i < cities.length; i++) {
-//         words = cities[i].split("1");
-//         for (let j = 0; j < words.length; j++) {
-//             result.push() = words[j].length;
-            
-//         }
-//     }
-
-// }
-// console.log(words);
-// console.log(result);
 
 
 // 13 
@@ -124,3 +113,36 @@ let belowZero = numbers.map(function(a) {
     
 });
 console.log(belowZero);
+
+14 
+
+const task = [];
+
+for (let i = 0; i < 10; i++) {
+    task.push(Math.floor(Math.random() * (10 - 0)));
+}
+
+const arrayEven = task.map (function(a){
+    if (a % 2 == 0) {
+        return a;
+    }
+})
+console.log(task);
+console.log(arrayEven);
+
+
+// 15
+
+const taskNew = [];
+
+for (let i = 0; i < 6; i++) {
+    taskNew.push(Math.floor(Math.random() * (10 - 0)));
+    
+}
+console.log(taskNew);
+let sum = 0;
+for (let i = 0; i < taskNew.length; i++) {
+    sum += taskNew[i];
+}
+
+console.log(sum / taskNew.length);
