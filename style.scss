@@ -17,7 +17,6 @@ body {
     max-width: 1440px;
     background-color:  #000915;
     height: 100vh;
-    padding: 0 15px;
 }
 
 
@@ -61,8 +60,10 @@ body {
 
 
 .container {
-    max-width: 1220px;
+    max-width: 1240px;
     margin: auto;
+    padding-left: 10px;
+    padding-right: 10px;
    
 }
 
@@ -158,10 +159,7 @@ body {
         background-size: contain;
         width: 485px;
         height: 333px;
-    }
-    &__item {
-        max-width: 50%;
-
+        width: 100%;
     }
     &__flex {
         display: flex;
@@ -230,9 +228,11 @@ body {
             height: 100%;
             margin-bottom: 96px;
         }
-    }
-
-    .container {
-        padding-bottom: 92px;
+        &__item {
+            width: 100%;
+        }
+        &__img {
+            width: 100%;
+        }
     }
 }

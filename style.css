@@ -16,7 +16,6 @@ body {
   max-width: 1440px;
   background-color: #000915;
   height: 100vh;
-  padding: 0 15px;
 }
 
 .text {
@@ -55,8 +54,10 @@ body {
 }
 
 .container {
-  max-width: 1220px;
+  max-width: 1240px;
   margin: auto;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
 .top {
@@ -141,9 +142,7 @@ body {
   background-size: contain;
   width: 485px;
   height: 333px;
-}
-.words__item {
-  max-width: 50%;
+  width: 100%;
 }
 .words__flex {
   display: flex;
@@ -202,7 +201,10 @@ body {
     height: 100%;
     margin-bottom: 96px;
   }
-  .container {
-    padding-bottom: 92px;
+  .words__item {
+    width: 100%;
+  }
+  .words__img {
+    width: 100%;
   }
 }/*# sourceMappingURL=style.css.map */
