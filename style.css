@@ -54,13 +54,6 @@ body {
   background: #EB443F;
 }
 
-.flex {
-  display: flex;
-  justify-content: space-between;
-  height: 800px;
-  align-items: center;
-}
-
 .container {
   max-width: 1220px;
   margin: auto;
@@ -136,8 +129,30 @@ body {
 .seasons__item {
   max-width: 50%;
 }
+.seasons__flex {
+  display: flex;
+  justify-content: space-between;
+  height: 800px;
+  align-items: center;
+}
 
-@media (max-width: 426px) {
+.words__img {
+  background-image: url(./img/joystick-2.png);
+  background-size: contain;
+  width: 485px;
+  height: 333px;
+}
+.words__item {
+  max-width: 50%;
+}
+.words__flex {
+  display: flex;
+  justify-content: space-between;
+  height: 800px;
+  align-items: center;
+}
+
+@media (max-width: 769px) {
   .button {
     margin: auto;
   }
@@ -145,6 +160,7 @@ body {
     font-size: 14px;
     line-height: 22px;
     text-align: center;
+    margin: 32px auto;
   }
   .header__text {
     font-size: 32px;
@@ -169,9 +185,24 @@ body {
   .seasons__item {
     max-width: 100%;
   }
-  .flex {
+  .seasons__img {
+    margin: auto;
+  }
+  .seasons__flex {
     flex-wrap: wrap;
     height: 653px;
     gap: 64px;
+  }
+  .words__flex {
+    flex-wrap: wrap;
+    flex-direction: column-reverse;
+    height: 653px;
+    gap: 64px;
+    margin-top: 136px;
+    height: 100%;
+    margin-bottom: 96px;
+  }
+  .container {
+    padding-bottom: 92px;
   }
 }/*# sourceMappingURL=style.css.map */

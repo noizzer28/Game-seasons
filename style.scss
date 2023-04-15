@@ -58,16 +58,12 @@ body {
     }
 }
 
-.flex {
-    display: flex;
-    justify-content: space-between;
-    height: 800px;
-    align-items: center;
-}
+
 
 .container {
     max-width: 1220px;
     margin: auto;
+   
 }
 
 
@@ -143,15 +139,42 @@ body {
         height: 333px;
         background-image: url(./img/joystick.png);
         background-size: contain;
+
     }
     &__item {
         max-width: 50%;
     }
+    &__flex {
+        display: flex;
+        justify-content: space-between;
+        height: 800px;
+        align-items: center;
+    }
+}
+
+.words {
+    &__img {
+        background-image: url(./img/joystick-2.png);
+        background-size: contain;
+        width: 485px;
+        height: 333px;
+    }
+    &__item {
+        max-width: 50%;
+
+    }
+    &__flex {
+        display: flex;
+        justify-content: space-between;
+        height: 800px;
+        align-items: center;
+    }
 }
 
 
+
 // Mobile
-@media (max-width: 426px) {
+@media (max-width: 769px) {
 
 .button {
     margin: auto;
@@ -161,6 +184,7 @@ body {
     font-size: 14px;
     line-height: 22px;
     text-align: center;
+    margin: 32px auto;
 }
 .header__text {
     font-size: 32px;
@@ -187,11 +211,28 @@ body {
     &__item {
         max-width: 100%;
     }
+    &__img {
+        margin: auto;
+    }
+    &__flex {
+        flex-wrap: wrap;
+        height: 653px;
+        gap: 64px;
+    }
 }
+    .words {
+        &__flex {
+            flex-wrap: wrap;
+            flex-direction:column-reverse;
+            height: 653px;
+            gap: 64px;
+            margin-top: 136px;
+            height: 100%;
+            margin-bottom: 96px;
+        }
+    }
 
-.flex {
-    flex-wrap: wrap;
-    height: 653px;
-    gap: 64px;
-}
+    .container {
+        padding-bottom: 92px;
+    }
 }
